@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+}
+#video {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border: 2px solid #000;
+}
+#predictions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 700px;
+    height: 500px;
+    border: 2px solid #000;
+}
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 700px;
+    height: 500px;
+    border: 2px solid #000;
+    overflow-y: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+button {
+    margin: 10px;
+}

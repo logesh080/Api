@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLOv5 Webcam Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Webcam Prediction with YOLOv5</h1>
+    <div id="container">
+        <video id="video" autoplay></video>
+        <div id="predictions">
+            <h2>Predictions:</h2>
+            <img id="processedImage" src="" alt="Processed Image" style="display: none;">
+        </div>
+        <div id="details">
+            <h2>Prediction Details:</h2>
+            <div id="predictionDetails"></div>
+        </div>
+    </div>
+    <button id="capture">Capture and Predict</button>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
